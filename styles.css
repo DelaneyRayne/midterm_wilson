@@ -61,6 +61,12 @@ nav a:hover {
     background: var(--grey);
 }
 
+/* Smaller hero image */
+.hero-image img {
+    width: 180px;
+    max-width: 100%;
+}
+
 /* ===== BUTTONS ===== */
 button {
     background: var(--pink);
@@ -117,6 +123,15 @@ button:hover {
     padding: 20px;
 }
 
+/* Sidebar image styling */
+.sidebar img {
+    width: 100%;
+    max-width: 200px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+}
+
 /* ===== FOOTER ===== */
 footer {
     background: var(--blue);
@@ -131,13 +146,12 @@ footer {
     flex-wrap: wrap;
 }
 
-/* Each section */
 .footer-section {
     flex: 1;
     min-width: 200px;
 }
 
-/* FIX: Horizontal links */
+/* Horizontal links */
 .footer-section ul {
     list-style: none;
     padding: 0;
@@ -145,7 +159,7 @@ footer {
     gap: 15px;
 }
 
-/* Hover lift effect */
+/* Hover lift */
 .footer-container div {
     transition: transform 0.3s;
     cursor: pointer;
