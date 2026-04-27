@@ -1,0 +1,149 @@
+/* ===== VARIABLES ===== */
+:root {
+    --blue: #2f6f8f;
+    --green: #3fa34d;
+    --pink: #e75480;
+    --light: #f4f4f4;
+    --grey: #dddddd;
+}
+
+/* ===== GLOBAL ===== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--light);
+}
+
+/* ===== HEADER ===== */
+header {
+    background: var(--blue);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* ===== HERO ===== */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    background: var(--grey);
+}
+
+.hero img {
+    width: 250px;
+    max-width: 100%;
+}
+
+/* ===== BUTTONS ===== */
+button {
+    background: var(--pink);
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+
+    /* Animation */
+    transition: transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.green-btn {
+    background: var(--green);
+}
+
+/* ===== DASHBOARD GRID ===== */
+.dashboard {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* ===== WIDGETS ===== */
+.widgets {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background: var(--grey);
+    padding: 40px;
+    flex: 1;
+    text-align: center;
+    border-radius: 15px;
+}
+
+/* ===== QUOTE ===== */
+.quote {
+    background: var(--grey);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+    background: var(--grey);
+    padding: 20px;
+}
+
+.sidebar img {
+    width: 100%;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: var(--blue);
+    color: white;
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 600px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .widgets {
+        flex-direction: column;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+}
+
+/* ===== TABLET ===== */
+@media (min-width: 601px) and (max-width: 900px) {
+
+    .dashboard {
+        grid-template-columns: 2fr 1fr;
+    }
+}
