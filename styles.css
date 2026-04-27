@@ -57,13 +57,13 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px;
+    padding: 50px;
     background: var(--grey);
 }
 
-/* Smaller hero image */
+/* Bigger hero image */
 .hero-image img {
-    width: 180px;
+    width: 240px;
     max-width: 100%;
 }
 
@@ -104,7 +104,7 @@ button:hover {
 
 .card {
     background: var(--grey);
-    padding: 40px;
+    padding: 60px; /* taller widgets */
     flex: 1;
     text-align: center;
     border-radius: 15px;
@@ -123,7 +123,7 @@ button:hover {
     padding: 20px;
 }
 
-/* Sidebar image styling */
+/* Sidebar image */
 .sidebar img {
     width: 100%;
     max-width: 200px;
@@ -139,7 +139,6 @@ footer {
     padding: 20px;
 }
 
-/* Footer layout */
 .footer-container {
     display: flex;
     justify-content: space-between;
@@ -151,7 +150,6 @@ footer {
     min-width: 200px;
 }
 
-/* Horizontal links */
 .footer-section ul {
     list-style: none;
     padding: 0;
@@ -159,7 +157,6 @@ footer {
     gap: 15px;
 }
 
-/* Hover lift */
 .footer-container div {
     transition: transform 0.3s;
     cursor: pointer;
@@ -169,7 +166,6 @@ footer {
     transform: translateY(-5px);
 }
 
-/* Footer links */
 footer a {
     color: white;
     text-decoration: none;
@@ -180,7 +176,6 @@ footer a:hover {
     color: var(--pink);
 }
 
-/* Bottom text */
 .footer-bottom {
     text-align: center;
     margin-top: 10px;
