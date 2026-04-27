@@ -14,6 +14,12 @@ body {
     background-color: var(--light);
 }
 
+/* Responsive images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* ===== HEADER ===== */
 header {
     background: var(--blue);
@@ -55,11 +61,6 @@ nav a:hover {
     background: var(--grey);
 }
 
-.hero img {
-    width: 250px;
-    max-width: 100%;
-}
-
 /* ===== BUTTONS ===== */
 button {
     background: var(--pink);
@@ -69,7 +70,6 @@ button {
     margin: 5px;
     cursor: pointer;
     border-radius: 5px;
-
     transition: transform 0.2s, opacity 0.2s;
 }
 
@@ -117,10 +117,6 @@ button:hover {
     padding: 20px;
 }
 
-.sidebar img {
-    width: 100%;
-}
-
 /* ===== FOOTER ===== */
 footer {
     background: var(--blue);
@@ -135,7 +131,21 @@ footer {
     flex-wrap: wrap;
 }
 
-/* Interactive footer sections */
+/* Each section */
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+/* FIX: Horizontal links */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+/* Hover lift effect */
 .footer-container div {
     transition: transform 0.3s;
     cursor: pointer;
