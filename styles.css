@@ -22,10 +22,28 @@ header {
     padding: 20px;
 }
 
+/* Clickable title */
+header h1 {
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+header h1:hover {
+    opacity: 0.8;
+}
+
+/* Navigation */
 nav a {
     color: white;
     margin: 0 10px;
     text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--pink);
 }
 
 /* ===== HERO ===== */
@@ -50,13 +68,14 @@ button {
     padding: 10px;
     margin: 5px;
     cursor: pointer;
+    border-radius: 5px;
 
-    /* Animation */
-    transition: transform 0.2s;
+    transition: transform 0.2s, opacity 0.2s;
 }
 
 button:hover {
     transform: scale(1.05);
+    opacity: 0.9;
 }
 
 .green-btn {
@@ -109,11 +128,35 @@ footer {
     padding: 20px;
 }
 
+/* Footer layout */
 .footer-container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
+/* Interactive footer sections */
+.footer-container div {
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.footer-container div:hover {
+    transform: translateY(-5px);
+}
+
+/* Footer links */
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: var(--pink);
+}
+
+/* Bottom text */
 .footer-bottom {
     text-align: center;
     margin-top: 10px;
