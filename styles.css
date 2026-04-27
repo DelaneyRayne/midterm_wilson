@@ -52,11 +52,12 @@ nav a:hover {
     justify-content: space-between;
     align-items: center;
     background-color: var(--grey);
-    padding: 40px;
+    padding: 60px; /* increased spacing */
 }
 
 .hero-image img {
-    width: 240px;
+    width: 300px;  /* bigger image */
+    max-width: 100%;
 }
 
 /* ===== BUTTONS ===== */
@@ -89,7 +90,7 @@ button {
 
 .card {
     background-color: var(--grey);
-    padding: 60px;
+    padding: 80px; /* taller widgets */
     flex: 1;
     text-align: center;
 }
