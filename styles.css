@@ -52,11 +52,12 @@ nav a:hover {
     justify-content: space-between;
     align-items: center;
     background-color: var(--grey);
-    padding: 60px; /* increased spacing */
+    padding: 70px;
 }
 
+/* Bigger hero image */
 .hero-image img {
-    width: 300px;  /* bigger image */
+    width: 360px;
     max-width: 100%;
 }
 
@@ -88,11 +89,17 @@ button {
     gap: 20px;
 }
 
+/* Default card size */
 .card {
     background-color: var(--grey);
-    padding: 80px; /* taller widgets */
+    padding: 40px;
     flex: 1;
     text-align: center;
+}
+
+/* ONLY widgets are taller */
+.widgets .card {
+    padding: 90px;
 }
 
 /* ===== QUOTE ===== */
