@@ -94,12 +94,14 @@ button {
     text-align: center;
 }
 
-/* FORCE taller widgets */
+/* tall widgets */
 .widgets .card {
     min-height: 220px;
     display: flex;
+    flex-direction: column;   /* stack text nicely */
     align-items: center;
     justify-content: center;
+    padding: 20px;
 }
 
 /* ===== QUOTE ===== */
