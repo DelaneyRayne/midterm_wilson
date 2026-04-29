@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f6fa; /* light blue-grey */
+    background-color: #f0f6fa;
 }
 
 /* ===== HEADER ===== */
@@ -28,11 +28,12 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
     padding: 40px;
-    background: #ffffff; /* light instead of grey */
+    background: #ffffff;
 }
 
+/* BIGGER IMAGE */
 .hero img {
-    width: 160px; /* smaller image */
+    width: 220px;
 }
 
 /* ===== BUTTONS ===== */
@@ -42,6 +43,14 @@ button {
     border: none;
     padding: 10px;
     margin: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+/* HOVER EFFECT */
+button:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
 }
 
 .green-btn {
@@ -63,7 +72,7 @@ button {
 }
 
 .card {
-    background: #ffffff; /* light cards */
+    background: #ffffff;
     padding: 20px;
     flex: 1;
     text-align: center;
@@ -102,12 +111,18 @@ footer {
 .footer-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-footer a {
+/* ROW LINKS */
+.footer-links a {
     color: white;
-    margin-left: 10px;
+    margin-left: 15px;
     text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #e75480;
 }
 
 /* ===== MOBILE ===== */
@@ -122,6 +137,10 @@ footer a {
     }
 
     .widgets {
+        flex-direction: column;
+    }
+
+    .footer-container {
         flex-direction: column;
     }
 }
