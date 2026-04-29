@@ -1,6 +1,12 @@
-/* ===== BASIC ===== */
-body {
+/* ===== PAGE LAYOUT (STICKY FOOTER) ===== */
+html, body {
+    height: 100%;
     margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
     font-family: Arial, sans-serif;
     background-color: #f0f6fa;
 }
@@ -55,12 +61,14 @@ button:hover {
     background: #3fa34d;
 }
 
-/* ===== LAYOUT ===== */
+/* ===== MAIN LAYOUT ===== */
 .dashboard {
     display: grid;
-    grid-template-columns: 1fr 250px; /* fixed sidebar */
+    grid-template-columns: 1fr 250px;
     gap: 20px;
     padding: 20px;
+
+    flex: 1; /* pushes footer down */
 }
 
 /* ===== WIDGETS ===== */
@@ -99,7 +107,6 @@ button:hover {
     border-radius: 8px;
 }
 
-/* Sidebar image */
 .sidebar img {
     width: 100%;
     height: 120px;
@@ -138,7 +145,7 @@ footer {
     }
 
     .dashboard {
-        grid-template-columns: 1fr; /* stack layout */
+        grid-template-columns: 1fr;
     }
 
     .widgets {
@@ -146,7 +153,7 @@ footer {
     }
 
     .sidebar {
-        width: 100%;   /* full width on mobile */
+        width: 100%;
         height: auto;
     }
 
