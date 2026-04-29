@@ -1,31 +1,13 @@
-/* ===== BASIC RESET ===== */
+/* ===== BASIC ===== */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-}
-
-/* ===== COLORS ===== */
-:root {
-    --blue: #2f6f8f;
-    --green: #3fa34d;
-    --pink: #e75480;
-    --grey: #dddddd;
-    --light: #e6eef4; /* grey-blue background */
-}
-
-/* ===== GLOBAL ===== */
-body {
-    background-color: var(--light);
-}
-
-img {
-    max-width: 100%;
-    height: auto;
+    background-color: #f0f6fa; /* light blue-grey */
 }
 
 /* ===== HEADER ===== */
 header {
-    background-color: var(--blue);
+    background: #2f6f8f;
     color: white;
     text-align: center;
     padding: 20px;
@@ -33,43 +15,40 @@ header {
 
 nav a {
     color: white;
-    text-decoration: none;
     margin: 0 10px;
-    padding: 5px 10px;
+    text-decoration: none;
 }
 
 nav a:hover {
-    background-color: var(--pink);
+    background: #e75480;
 }
 
 /* ===== HERO ===== */
 .hero {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: var(--grey);
-    padding: 60px;
+    padding: 40px;
+    background: #ffffff; /* light instead of grey */
 }
 
-.hero-image img {
-    width: 180px;
+.hero img {
+    width: 160px; /* smaller image */
 }
 
 /* ===== BUTTONS ===== */
 button {
-    background-color: var(--pink);
+    background: #e75480;
     color: white;
     border: none;
     padding: 10px;
     margin: 5px;
-    cursor: pointer;
 }
 
 .green-btn {
-    background-color: var(--green);
+    background: #3fa34d;
 }
 
-/* ===== DASHBOARD ===== */
+/* ===== LAYOUT ===== */
 .dashboard {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -80,55 +59,44 @@ button {
 /* ===== WIDGETS ===== */
 .widgets {
     display: flex;
-    gap: 20px;
+    gap: 15px;
 }
 
 .card {
-    background-color: var(--grey);
+    background: #ffffff; /* light cards */
     padding: 20px;
     flex: 1;
     text-align: center;
-    transition: transform 0.2s; /* smooth hover */
+    min-height: 180px;
+    transition: transform 0.2s;
 }
 
-/* Taller widgets */
-.widgets .card {
-    min-height: 220px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/* HOVER BLOW-UP EFFECT */
 .card:hover {
     transform: scale(1.05);
 }
 
 /* ===== QUOTE ===== */
 .quote {
-    background-color: var(--grey);
-    padding: 20px;
-    margin-top: 20px;
+    background: #ffffff;
+    padding: 15px;
+    margin-top: 15px;
 }
 
 /* ===== SIDEBAR ===== */
 .sidebar {
-    background-color: var(--grey);
-    padding: 20px;
+    background: #ffffff;
+    padding: 15px;
 }
 
 .sidebar img {
     width: 100%;
-    max-width: 200px;
-    display: block;
-    margin: 10px auto;
 }
 
 /* ===== FOOTER ===== */
 footer {
-    background-color: var(--blue);
+    background: #2f6f8f;
     color: white;
-    padding: 20px;
+    padding: 15px;
 }
 
 .footer-container {
@@ -136,25 +104,10 @@ footer {
     justify-content: space-between;
 }
 
-.footer-section ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 15px;
-}
-
 footer a {
     color: white;
+    margin-left: 10px;
     text-decoration: none;
-}
-
-footer a:hover {
-    color: var(--pink);
-}
-
-.footer-bottom {
-    text-align: center;
-    margin-top: 10px;
 }
 
 /* ===== MOBILE ===== */
@@ -170,16 +123,5 @@ footer a:hover {
 
     .widgets {
         flex-direction: column;
-    }
-
-    .footer-container {
-        flex-direction: column;
-    }
-}
-
-/* ===== TABLET ===== */
-@media (min-width: 601px) and (max-width: 900px) {
-    .dashboard {
-        grid-template-columns: 2fr 1fr;
     }
 }
