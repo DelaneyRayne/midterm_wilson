@@ -31,9 +31,8 @@ nav a:hover {
     background: #ffffff;
 }
 
-/* IMAGE */
 .hero img {
-    width: 350px;
+    width: 220px;
 }
 
 /* ===== BUTTONS ===== */
@@ -47,7 +46,6 @@ button {
     transition: transform 0.2s, opacity 0.2s;
 }
 
-/* HOVER EFFECT */
 button:hover {
     transform: scale(1.1);
     opacity: 0.9;
@@ -60,7 +58,7 @@ button:hover {
 /* ===== LAYOUT ===== */
 .dashboard {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 1fr 250px; /* fixed sidebar */
     gap: 20px;
     padding: 20px;
 }
@@ -91,18 +89,22 @@ button:hover {
     margin-top: 15px;
 }
 
-.card:hover {
-    transform: scale(1.05);
-}
-
-/* ===== SIDEBAR ===== */
+/* ===== SIDEBAR (FIXED SIZE) ===== */
 .sidebar {
     background: #ffffff;
     padding: 15px;
+    width: 250px;
+    height: 300px;
+    box-sizing: border-box;
+    border-radius: 8px;
 }
 
+/* Sidebar image */
 .sidebar img {
     width: 100%;
+    height: 120px;
+    object-fit: cover;
+    margin: 10px 0;
 }
 
 /* ===== FOOTER ===== */
@@ -118,7 +120,6 @@ footer {
     align-items: center;
 }
 
-/* ROW LINKS */
 .footer-links a {
     color: white;
     margin-left: 15px;
@@ -137,11 +138,16 @@ footer {
     }
 
     .dashboard {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* stack layout */
     }
 
     .widgets {
         flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;   /* full width on mobile */
+        height: auto;
     }
 
     .footer-container {
