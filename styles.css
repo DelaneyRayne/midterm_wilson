@@ -91,6 +91,10 @@ button:hover {
     margin-top: 15px;
 }
 
+.card:hover {
+    transform: scale(1.05);
+}
+
 /* ===== SIDEBAR ===== */
 .sidebar {
     background: #ffffff;
